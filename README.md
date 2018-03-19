@@ -1,3 +1,13 @@
+    Severity classification is as follows. **All Sev0 and Sev1 bugs should have a root cause in the associated bug
+        Sev 0 - Any failure of VSO.CI or VSO.Release.CI to build successfully or anything causing a failure to deploy in P0 runs
+            Example: build break in VSO.CI or failing VSSDF step in a P0 run.
+        Sev 1 - Any consistent failure of a P0 run where deployment succeeds or a Sev2 with 10 or more occurences.
+            Example: A consistent failure of one or more tests in a P0 run.
+        Sev 2 - Identification and mitigation of a flaky (intermittent) failure of a test in P0 run or VSO.PR.
+            Example: A test begins to fail intermittently in SPS.SelfTest or someone reports a L0 test failure in their PR unrelated to their changes.
+        Sev 3 - Anything found in FlakeyTestDetector
+
+
 <noinclude>
 {{Template:Playbook Header|Owners=chrisid|WGSponsor=[mailto:chrisid chrisid]|DocumentQuality=InProgress}}
 </noinclude>
