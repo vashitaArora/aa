@@ -1,7 +1,7 @@
 ## Install Git for Windows
 
 **Manual Steps:**
-
+wqe
   - [Git for Windows](http://git-scm.com/download/win) is the standalone
     Git command line client for Windows.
       - Recommended: Choose the "Use Git from the Windows Command
