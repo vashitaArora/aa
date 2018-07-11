@@ -17,19 +17,19 @@ The Wiki experience hosts the following key features.
 - Content pane on the left shows rich preview of a Wiki page written in [markdown](https://www.visualstudio.com/en-us/docs/reference/markdown-guidance) along with the editor and edit time
  
 
-![Nav pane.gif](.attachments/Nav-pane.gif)
+![Nav pane.gif](1267px-shouldbe - Copy.jpg)
 
 ## Simplified edit experience
 - Supports rich content editing experience using markdown 
 - Side by side preview experience
 - Format pane that allows users to conveniently format markdown pages
  
-![02-Edit experience.PNG](.attachments/02-Edit-experience.PNG)
+![02-Edit experience.PNG](1267px-shouldbe - Copy.jpg)
 
 ## Review your page history 
 - See revisions for a page along with the author, the revision message, and the last updated time for a particular revision.
 
-![03-History page.PNG](.attachments/03-History-page.PNG)
+![03-History page.PNG](1267px-shouldbe - Copy.jpg)
 
 - Click on any of the revisions to understanding what changes were made to a revision.
 
