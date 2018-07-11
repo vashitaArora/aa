@@ -1,48 +1,45 @@
-## Install Git for Windows
+# Table of contents
+1. [Deep links](/Team-Pages/Search-and-Social/VS.In-Social/Wiki-edit-capabilities-(Markdown)/Links/Deep-links#introduction)
+2. [Wiki home page](#wiki-home-page)
+3. [Simplified edit experience](#simplified-edit-experience)
+4. [Review your page history ](#review-your-page-history)
+5. [Contribute](#contribute)
 
-**Manual Steps:**
-wqe
-  - [Git for Windows](http://git-scm.com/download/win) is the standalone
-    Git command line client for Windows.
-      - Recommended: Choose the "Use Git from the Windows Command
-        Prompt" option when prompted.
-      - Important: Leave "Checkout Windows-style, commit Unix-style line
-        endings" option selected. (This sets `core.autocrlf` to `true`,
-        because otherwise you might get compilation failing with `error
-        CS1040: Preprocessor directives must appear as the first
-        non-whitespace character on a line`)
-      - For "Configuring the terminal emulator to use with GitBash", the
-        default is fine.
-      - For "Configuring extra options", leave the defaults to "Enable
-        file system caching" and "Enable Git Credential Manager".
-      - Run the following commands to set up your name and email for
-        commits:
-            git config --global user.name "Your Name"
-            git config --global user.email you@microsoft.com
-      - Run the following command to ensure that you won't lose data
-        through line-ending corrections:
-            git config --global core.safecrlf true
-      - Recommended: Opt into a safer behavior where "git push" only
-        pushes commits in your current branch to the server: ([for more
-        info](https://github.com/miroadamy/miroadamy-dot-com/wiki/Difference-between-matching-and-simple---Git-push))
-            git config --global push.default simple
-      - Recommended: Enable fscache and preloadindex flags to improve
-        performance on Windows:
-            git config --global core.preloadindex true
-            git config --global core.fscache true
-      - (Optional, Not Recommended) Configure wordpad or notepad++ as
-        your default editor since they handle
-            \\n:
-            git config --global core.editor "'C:\Program Files (x86)\Windows NT\Accessories\wordpad.exe'"
-            git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-      - (Optional) Enable git rerere to help on large rebase operations
-            git config --global rerere.enabled true
-  - (Optional) [Posh-git](https://github.com/dahlbyk/posh-git) provides
-    PowerShell integration for Git
-      - Note: For large repos, you will want to set
-        '$GitPromptSettings.EnableFileStatus = $false' in your
-        powershell profile.
-  - (Optional) Configure Git to not warn about CRLF line endings when
-    diffing changes. Run the following command in your local Git
-    repository, or include the --global option to set globally:
-        git config --global core.whitespace cr-at-eol
+
+
+ # Introduction
+
+VSTS now supports its very own Wiki (preview) with a rich set of capabilities. Wiki is a great collaboration platform that will make it easy for teams to create and maintain project and process documentation in a simplified manner.
+
+The Wiki experience hosts the following key features.
+
+## Wiki home page
+- Content pane on the left shows rich preview of a Wiki page written in [markdown](https://www.visualstudio.com/en-us/docs/reference/markdown-guidance) along with the editor and edit time
+ 
+
+![Nav pane.gif](.attachments/Nav-pane.gif)
+
+## Simplified edit experience
+- Supports rich content editing experience using markdown 
+- Side by side preview experience
+- Format pane that allows users to conveniently format markdown pages
+ 
+![02-Edit experience.PNG](.attachments/02-Edit-experience.PNG)
+
+## Review your page history 
+- See revisions for a page along with the author, the revision message, and the last updated time for a particular revision.
+
+![03-History page.PNG](.attachments/03-History-page.PNG)
+
+- Click on any of the revisions to understanding what changes were made to a revision.
+
+![04-Compare Page.PNG](.attachments/04-Compare-Page.PNG)
+
+# Contribute
+
+1. Look at our [backlog](https://mseng.visualstudio.com/VSOnline/VS.in%20VCX%20Agile/_backlogs/board/Features) to see what is coming up next in Wiki. 
+2. If you have additional feedback on making Wiki better then please share your feedback using the VSTS smiley or simply drop us an email "VS.in Social Leads & PMs" <VSinSocialLeaders@>;
+3. Do you want to make this page better, simply edit and take a shot. It's that easy!! :)
+
+
+
